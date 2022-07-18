@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0 
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* Common Section */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* navigation CSS */
+.navigation-container{
+    background: #562EFF;
+}
+
+.navigation{
+    display: flex;
+    background-color: 562EFF;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.navigation img{
+    width: 40px;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-right: 35px;
+}
+
+/* Players Section */
+.container{
+    background-color: #fff;
+    margin-top: 21px;
+    padding: 30px;
+    width: 870px;
+    border-radius: 5px;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    
+    
+}
+
+.players .player-list img{
+    width: 56px;
+    height: 56px;
+}
+
+.player-list{
+    display: flex;
+    align-items: center;
+    
+}
+
+.player-list p{
+    margin-left: 16px;
+}
+.section-title{
+    font-size: 24px;
+    color: #562EFF;
+    margin-bottom: 30px;
+}
+
+/* Top Blog Section CSS */
+
+.course-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+}
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+
+.thumbnail{
+    display: flex;
+}
+.blog-detail{
+    margin-left: 15px;
+}
+
+.blog-detail h2{
+    font-size: 20px;
+}
+
+/* Course Detail */
+.course-detail{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+}
+
+.courses .banner img{
+    width: 224px;
+    height: 104px;
+}
+
+.course-info{
+    display: flex;
+    justify-content: space-between;
+}
+.course-author h2{
+    font-size: 20px;
+}
+
+.fa-star{
+    font-size: 12px;
+    color: gold;
+}
+
+/* Media Query */
+@media screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+        justify-content: center;
+    }
+}
